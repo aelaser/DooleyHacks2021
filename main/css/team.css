@@ -1,0 +1,118 @@
+.demo{ background: #f0e0d4; }
+
+.our-team{
+    text-align: center;
+    position: relative;
+    font-size: 16px;
+}
+
+.team-content {
+	max-width: 260px;
+	margin: auto;
+}
+
+.our-team .pic{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 8px solid #3759a5;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.our-team img{
+    width: 100%;
+    height: auto;
+}
+
+.our-team .socialm{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    transition: all 0.3s ease-out 0s;
+}
+
+.our-team .socialm .test .test2{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background: #3759a5;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 5px;
+    transform: scale(0);
+    transition: all 0.2s ease 0s;
+}
+
+.our-team:hover .socialm .test .test2{ transform: scale(1); }
+
+.our-team:hover .socialm .test .test2:hover{ background: #d9ba59; }
+
+.our-team .team-content{
+    padding: 15px 15px 20px;
+    background: #3759a5;
+    border-radius: 40px 10px;
+    margin-top: -20px;
+    color: #fff;
+    font-family: "Jost"; 
+}
+
+
+.our-team .title{
+    font-size: 1.8rem;
+    margin: 10px 0 5px 0;
+    font-weight: 400;
+}
+
+.our-team .post{
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 990px){
+	.our-team .pic{
+        width: 150px;
+        height: 150px;
+    }
+
+    .our-team{ margin-bottom: 30px; 
+    }
+
+    .our-team .socialm {
+    	top: 40px;
+    }
+
+    .team-content {
+		max-width: 240px;
+	}
+}
+
+@media only screen and (max-width: 576px){
+	.our-team .pic{
+        width: 150px;
+        height: 150px;
+    }
+    .our-team{ 
+    	margin-bottom: 30px; 
+    }
+
+    .team-content {
+		max-width: 350px;
+	}
+}
+
+@media only screen and (max-width: 359px){
+    .our-team .pic{
+        width: 150px;
+        height: 150px;
+    }
+    .our-team .socialm{ top: 20px; 
+}

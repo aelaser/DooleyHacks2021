@@ -1,0 +1,1392 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open Sans:100,200,300,400,500,600,700');
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('assets/fonts/Myriad Pro Semibold.ttf') format('truetype');
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.logo img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 5rem 0;
+}
+
+header {
+  width: 100%;
+  height: 5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.testing {
+  width: 100%;
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(255,255,255, 0.2);
+}
+
+.nav-brand {
+  width: 3.2rem;
+  margin-left: 1rem;
+}
+
+.menu-icons i {
+  font-size: 3.5rem;
+  color: #fafafa;
+  cursor: pointer;
+}
+
+.close i {
+  color: #d84456;
+}
+
+.nav-list {
+  width: 25rem;
+  height: 100vh;
+  background-color: #97bdff;
+  position: fixed;
+  top: 0;
+  right: -26rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1500;
+  transition: all 650ms ease-in-out;
+}
+
+.nav-list.active{
+  right: 0;
+}
+
+.close {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+}
+
+.nav-item {
+  margin: 1.5rem 0;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  font-family: 'Quicksand', serif;
+  text-transform: uppercase;
+  color: rgba(0,0,0,.7);
+}
+
+.nav-link:hover {
+  color: #9b3243;
+}
+.padding {
+  padding-bottom: 2rem;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, rgba(55, 89, 165,0.9) 0%, rgba(55, 89, 165,0.8) 
+  100%), url("assets/img/bg/home.png") center no-repeat;
+  background-size: cover;
+  position: relative;
+  
+}
+
+.registration {
+  margin-top: 10rem;
+}
+
+.margin {
+  float:none;
+  margin:auto;
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.login-image {
+  margin-top: 11rem;
+  margin-bottom: 7rem;
+  position: relative;
+  display: inline-block;
+}
+
+.login-image .text {
+  position: absolute;
+ /* z-index: 999;*/
+  margin: 0 auto;
+  left: 0;
+  right: 6%;
+  top: 52%;
+  text-align: center;
+  width: 60%; 
+  font-size: 1.6rem;
+}
+
+.text a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.text h1 {
+  font-size: 1.6rem;
+}
+
+.text h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.text h2 {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  color: #fff;
+  line-height: 40px;
+  display: inline-block;
+  background: #d84456;
+  max-width: initial;
+  border-radius: 2.5rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  cursor: pointer;
+}
+
+.text h2:hover {
+  background: #e04f68;
+}
+
+/*--------------home--------------*/
+.hero {
+  width: 100%;
+  background: linear-gradient(135deg, rgba(55, 89, 165,0.9) 0%, rgba(55, 89, 165,0.8) 
+  100%), url("assets/img/bg/home.png") center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  width: 100%;
+  height: 7rem;
+  background: url("assets/img/arc/sb.png") center no-repeat;
+  background-size: cover;
+}
+
+.main-message {
+  text-align: center;
+  width: auto;
+  color: #fafafa;
+}
+
+.main-message h1 {
+  font-family: "Myriad Pro";
+  font-weight: bold;
+  font-size: 3.1rem;
+  margin: 1rem 0;
+}
+
+.main-message p {
+  font-family: "Open Sans", serif;
+  font-weight: lighter;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: no-drop;
+}
+
+.btn{
+  font-family: 'Jost';
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  background-color: #e8546a;
+  border-radius: 2rem;
+  color: #fafafa;
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  padding:  1rem 2.5rem;
+  transition: background-color 650ms;
+}
+
+.btn:hover {
+  color: #fafafa;
+  background-color: #ce587b;
+}
+
+.main-image {
+  width: auto;
+  text-align: center;
+  background: url("assets/img/animations/logo_anim.gif") center no-repeat;
+  background-size: auto 100%;
+}
+
+.hchange {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 4rem;
+
+}
+
+/*--------------About--------------*/
+.about {
+  width: 100%;
+  margin: 0 auto;
+  padding:  1.5rem;
+  min-height: 35vh;
+  background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 
+    100%);
+  background-size: cover;
+  position: relative;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  width: 100%;
+  height: 7rem;
+  background: url("assets/img/arc/sw.png") center no-repeat;
+  background-size: cover;
+}
+
+.about {
+  padding-top: 0;
+}
+
+.titles {
+  transform: translateY(-2.9rem);
+}
+.display-4 {
+  font-family: "Jost";
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+/*-----------animation------------*/
+div.slide-down {
+  width:100%;
+  overflow:hidden;
+}
+
+div.slide-down p {
+  animation: 1s slide-down;
+  margin-top:0%;
+}
+
+@keyframes slide-down {
+  from {
+    margin-top: -100%;
+    height: 300%; 
+  }
+
+  to {
+    margin-top: 0%;
+    height: 100%;
+  }
+}
+/*-----------------------------------*/
+
+.blueTitle {
+  color: #3759a5;
+}
+
+.aboutus {
+  transform: translateY(-3.7rem);
+  padding: 0 0rem;
+}
+
+.achange {
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.achange p{
+  font-size: 1.5rem;
+  font-family: 'Jost';
+  text-align: center;
+  color: #4C5360;
+}
+
+.achange h4 {
+  font-size: 1.6rem;
+  margin-top: 2.8rem;
+  text-align: center;
+}
+
+.achange a {
+  color: #3759a5;
+}
+
+.main-slider {
+  margin-top: 6rem;
+  text-align: center;
+  width: auto;
+}
+
+/*--------------FAQ--------------*/
+.fchange {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 2rem;
+  padding-bottom: 0;
+}
+
+.faq {
+  width: 100%;
+  min-height: 60vh;
+  background: url("assets/img/bg/envo.png") center no-repeat;
+  background-color:rgb(63,165,146);
+  background-size: cover;
+  position: relative;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.faq::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  width: 100%;
+  height: 7rem;
+  background: url("assets/img/arc/sg.png") center no-repeat;
+  background-size: cover;
+}
+
+.anim {
+visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.whiteTitle {
+  color: #F2F9F8;
+}
+
+.faqus {
+  transform: translateY(-2.6rem);
+}
+
+/*--------------Spnosor--------------*/
+.sponsor {
+  width: 100%;
+  min-height: 35vh;
+  background: url("assets/img/bg/sponsor.png") center no-repeat;
+  background-color:rgb(255,255,255);
+  background-size: cover;
+  position: relative;
+}
+
+.sponsor::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  width: 100%;
+  height: 7rem;
+  background: url("assets/img/arc/sr.png") center no-repeat;
+  background-size: cover;
+
+}
+
+#greenTitle {
+  color: #3fa592;
+}
+
+.schange img {
+  filter: sepia(1) hue-rotate(103deg);
+  -webkit-filter: sepia(1) hue-rotate(103deg);
+  -webkit-transition: all .3s ease-in-out; 
+}
+
+.schange img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.01);
+}
+
+.sponorus {
+  transform: translateY(-4.5rem);
+}
+
+.interested h4 {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-size: 1.3rem;
+  padding-top: 0.2rem;
+  padding-bottom:  0.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.emailus h4 {
+  color: #3fa592;
+  font-size: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.sponsor1, .sponsor2, .sponsor3, .sponsor4, .sponsor5, .sponsor6 {
+  width: 13em;
+  margin: 1rem;
+}
+
+.schange {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+/*--------------team--------------*/
+.team {
+  width: 100%;
+  min-height: 45vh;
+  background: url("assets/img/bg/innov.png") center no-repeat;
+  background-color:rgb(216,68,86);
+  background-size: cover;
+  position: relative;
+}
+
+.team::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1rem;
+  width: 100%;
+  height: 7rem;
+  background: url("assets/img/arc/srw.png") center no-repeat;
+  background-size: cover;
+}
+
+.changeSize {
+  font-size: 2.4rem;
+}
+
+.teamus {
+  transform: translateY(-3rem);
+}
+
+.tchange {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+/*--------------contact--------------*/
+.contact {
+  width: 100%;
+  background: url("assets/img/bg/contactus.png") center no-repeat;
+  background-color:rgb(255,255,255);
+  background-size: cover;
+  position: relative;
+  padding-bottom: 0;
+}
+
+.contactus {
+  transform: translateY(-1.8rem);
+}
+
+.contact {
+	background-color: white !important;
+  padding-bottom: 1rem;
+}
+
+.social a {
+  font-size: 2.5em;
+  padding: 1.2rem;
+}
+
+.fa-facebook, 
+.fa-instagram,
+.fa-twitter,
+.fa-github-alt,
+.fa-envelope {
+  color: #d84456;
+}
+
+.fa-facebook:hover {
+	color: #3b5998;
+}
+
+.fa-instagram:hover {
+	color: #517fa4;
+}
+
+.fa-twitter:hover {
+	color: #00aced;
+}
+
+.fa-github-alt:hover {
+	color: #333;
+}
+
+.fa-envelope:hover {
+	color: #3fa592;
+}
+
+#mc_embed_signup {
+    clear: left;
+    font-family: 'Jost', serif;
+    font-size: 1.5rem;
+    width: 100%;
+    color: #d84456;
+}
+
+#mc_embed_signup form {
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+
+#mc_embed_signup label {
+    display: block;
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+#mc_embed_signup input.email {
+    font-size: 1.4rem;
+    border: 1px solid #ABB0B2;
+    border-radius: 3px;
+    background-color: #fff;
+    box-sizing: border-box;
+    height: 32px;
+    padding: 0px 0.4em;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    width: 70%;
+    margin-bottom: 5px;
+}
+
+#mc_embed_signup .clear {
+    display: block;
+    width: 100%;
+}
+
+.button {
+    border: none;
+    border-radius: 3px;
+    letter-spacing: .03em;
+    color: #fff;
+    box-sizing: border-box;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 18px;
+    display: inline-block;
+    transition: all 0.23s ease-in-out 0s;
+    cursor: pointer;
+}
+
+#mc_embed_signup .button {
+    width: 70%;
+    margin: 0;
+}
+
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.welcome hr {
+  border-top: 2px solid #fff;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+
+#redTitle {
+	color: #d84456;
+} 
+
+.hchange {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 4rem;
+
+}
+
+/*--------------footer--------------*/
+footer {
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2.3rem;
+  font-family: 'Jost', serif;
+}
+
+.footer h5 {
+   font-size: 1.4rem;
+   font-weight: 400;
+}
+
+.sticky {
+  margin-top: auto
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+/*---Media Queries --*/
+@media screen and (min-width: 321px) {
+
+.main-message h1 {
+  font-size: 3.6rem;
+}
+
+.btn {
+  margin-top: 1.7rem;
+}
+
+.hero::before {
+  bottom: -1.5rem;
+}
+
+.interested h4 {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  color:#fff; 
+  line-height:40px; 
+  display:inline-block; 
+  background:#3fa592;
+  max-width: initial;
+  border-radius: 2.5rem;
+  padding-top: 0.2rem;
+  padding-bottom:  0.5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.interested h4:hover {
+  background: #4eaf9c;
+}
+
+.emailus h4 {
+  color: #3fa592;
+  font-size: 1.6rem;
+}
+
+.changeSize {
+  font-size: 2.7rem;
+}
+}
+
+/*Change Meet the team font size*/
+@media screen and (min-width: 400px) {
+
+.login-image .text {
+  right: 6%;
+  top: 54%;
+}
+
+.text h1 {
+  font-size: 2.2rem;
+}
+
+.text h3 {
+  font-size: 1.5rem;
+  margin-top: 1.3rem;
+}
+
+.text h2 {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.changeSize {
+  font-size: 3.3rem;
+}
+
+.contactus {
+  transform: translateY(-2rem);
+}
+
+.social a {
+  font-size: 3.5em;
+  padding: 1.7rem;
+}
+
+}
+
+@media screen and (min-width: 470px) {
+/*--------------Login--------------*/
+.login-image .text {
+  right: 6%;
+  top: 54%;
+}
+
+.text h1 {
+  font-size: 2.9rem;
+}
+
+.text h3 {
+  font-size: 1.5rem;
+  margin-top: 1.8rem;
+}
+
+.text h2 {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+/*--------------Home--------------*/
+.hero::before {
+  height: 15rem;
+  background-image: url("assets/img/arc/mb.png");
+  background-size: cover;
+  bottom: -8rem;
+}
+
+.btn {
+  margin-bottom: 7rem;
+}
+
+/*--------------About--------------*/
+.about::before {
+  height: 15rem;
+  background-image: url("assets/img/arc/mw.png");
+  background-size: cover;
+  bottom: -8rem;
+}
+
+.titles {
+  transform: translateY(-3.5rem);
+}
+
+.aboutus {
+  transform: translateY(-3.5rem);
+  padding: 0 1.7rem;
+}
+
+.achange h4 {
+  margin-top: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+/*--------------FAQ--------------*/
+.fchange {
+  padding-bottom: 1rem;
+}
+
+.faq::before {
+  height: 15rem;
+  background-image: url("assets/img/arc/mg.png");
+  background-size: cover;
+  bottom: -8rem;
+}
+
+/*--------------Sponsor--------------*/
+.interested h4 {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  padding-top: 0.2rem;
+  padding-bottom:  0.5rem;
+  padding-right: 4.5rem;
+  padding-left: 4.5rem;
+
+}
+
+.emailus h4 {
+  font-size: 1.7rem;
+}
+
+.sponsor::before {
+  height: 15rem;
+  background-image: url("assets/img/arc/mr.png");
+  background-size: cover;
+  bottom: -8rem;
+}
+
+/*--------------Team--------------*/
+.team::before {
+  height: 15rem;
+  background-image: url("assets/img/arc/mrw.png");
+  background-size: cover;
+  bottom: -8rem;
+}
+
+.tchange {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.changeSize {
+  font-size: 3.5rem;
+}
+
+/*--------------Contact--------------*/
+.social a {
+  font-size: 4em;
+  padding: 2rem;
+}
+
+}
+
+@media screen and (min-width: 576px) {
+.logoanim {
+    width: 70vw;
+  }
+
+.tchange {
+  padding-left: 0rem;
+  padding-right: 0rem;
+}
+
+}
+
+
+@media screen and (min-width: 700px) {
+/*Changes the size of logo*/
+header {
+    height: 8rem;
+}
+
+.nav-brand {
+  width: 3.5rem;
+}
+
+.nav-list {
+  width: initial;
+  height: initial;
+  background-color: transparent;
+  position: initial;
+  top: initial;
+  right: initial;
+  flex-direction: row;
+  transition: initial;
+}
+
+.menu-icons {
+  display: none;
+}
+
+/*space between nav titles*/
+.nav-item {
+  margin: 0 1rem;
+  margin-top: 1rem;
+}
+
+.nav-link, 
+.current {
+  color: #fafafa;
+  position: relative;
+  font-size: 1.3rem;
+}
+
+.nav-link::before, 
+.current::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -.5rem;
+  background-color: #d84352;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 650ms;
+}
+
+.current::before {
+  transform: scaleX(1);
+}
+
+.nav-link:hover {
+  color: #fafafa;
+}
+
+.highlight:hover::before {
+  transform: scaleX(1);
+}
+
+.btnn {
+   background-color: #e8546a;
+   border-radius: 17px;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.btnn:hover {
+  background-color: #ea6880;
+}
+
+.margin {
+  flex-basis: 80%;
+  max-width: 80%;
+}
+
+/*--------------Login--------------*/
+.login-image .text {
+  right: 6%;
+  top: 54%;
+}
+
+.text h1 {
+  font-size: 3rem;
+}
+
+.text h3 {
+  font-size: 2rem;
+  margin-top: 2.3rem;
+}
+
+.text h2 {
+  margin-top: 2.7rem;
+  font-size: 1.6rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+/*--------------About--------------*/
+.achange p{
+  font-size: 1.5rem;
+}
+
+.achange h4 {
+  font-size: 1.6rem;
+  margin-top: 2.8rem;
+  margin-bottom: 0rem;
+}
+
+/*--------------Sponsor--------------*/
+.sponorus {
+  transform: translateY(-6rem);
+}
+
+/*--------------Contact--------------*/
+.social a {
+  font-size: 4em;
+  padding: 3rem;
+}
+}
+
+@media screen and (min-width: 768px) {
+
+.nav-link, 
+.current {
+  font-size: 1.4rem;
+}
+
+.hero::before {
+  bottom: -7rem;
+}
+
+.main-message {
+  text-align: left;
+  margin-left: 5rem;
+  margin-top: 3rem;
+}
+
+.main-image {
+  margin-bottom: 8rem;
+}
+
+.titles {
+transform: translateY(-3.9rem);
+}
+
+/*--------------FAQ--------------*/
+.faqus {
+  transform: translateY(-3.7rem);
+}
+
+/*--------------Team--------------*/
+.teamus {
+  transform: translateY(-3.5rem);
+}
+
+/*--------------Contact--------------*/
+#mc_embed_signup label {
+  font-size: 1.7rem;
+}
+
+#mc_embed_signup input.email {
+  width: 350px;
+  margin: 0;
+}
+.button {
+  margin: 0;
+}
+
+#mc_embed_signup .clear {
+  display: inline-block;
+  width: initial;
+}
+
+#mc_embed_signup .button {
+  width: initial;
+    
+}
+
+.footer h5 {
+   font-size: 1.5rem;
+}
+}
+
+@media screen and (min-width: 950px) {
+.nav-link, 
+.current {
+  font-size: 1.45rem;
+}
+
+.nav-item {
+  margin: 0 2rem;
+  margin-top: 1rem;
+}
+
+.hero::before {
+  bottom: -9rem;
+  height: 18rem;
+  background-image: url("assets/img/arc/lb.png");
+  background-size: cover;
+}
+
+.main-message {
+  margin-left: 10rem;
+  margin-top: 7rem;
+}
+
+.margin {
+  flex-basis: 50%;
+  max-width: 50%;
+}
+
+/*--------------Log in--------------*/
+.login-image .text {
+  right: 6%;
+  top: 55%;
+}
+
+.text h1 {
+  font-size: 2.5rem;
+}
+
+.text h3 {
+  font-size: 1.5rem;
+  margin-top: 1.7rem;
+}
+
+.text h2 {
+  margin-top: 2.3rem;
+  font-size: 1.3rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+/*--------------About--------------*/
+.about::before {
+  bottom: -9rem;
+  height: 18rem;
+  background-image: url("assets/img/arc/lw.png");
+  background-size: cover;
+}
+
+.titles {
+  transform: translateY(-6rem);
+}
+
+.aboutus {
+  transform: translateY(-6rem);
+  /*change this*/
+  padding: 0 1.5rem;
+}
+
+.achange p{
+  font-size: 1.6rem;
+}
+
+/*--------------FAQ--------------*/
+.faqus {
+  transform: translateY(-5.4rem);
+}
+
+.faq::before {
+  bottom: -9rem;
+  height: 18rem;
+  background-image: url("assets/img/arc/lg.png");
+  background-size: cover;
+}
+
+/*--------------Sponsor--------------*/
+.sponsor::before {
+  bottom: 0px;
+  height: 22.7rem;
+  background-image: url("img/arc/arc_l_g.png");
+  background-size: cover;
+}
+
+.sponorus {
+  transform: translateY(-8rem);
+}
+
+.sponsor::before {
+  bottom: -9rem;
+  height: 18rem;
+  background-image: url("assets/img/arc/lr.png");
+  background-size: cover;
+}
+
+/*--------------Team--------------*/
+.team::before {
+  bottom: -9rem;
+  height: 18rem;
+  background-image: url("assets/img/arc/lrw.png");
+  background-size: cover;
+}
+
+.teamus {
+  transform: translateY(-5.3rem);
+}
+
+/*--------------Contact--------------*/
+.social a {
+  font-size: 4em;
+  padding: 3rem;
+}
+
+.contactus {
+  transform: translateY(-4rem);
+}
+
+.spacing {
+  padding-bottom: 0;
+  height: 290px;
+}
+
+.footer h5 {
+   font-size: 1.6rem;
+}
+}
+
+@media screen and (min-width: 992px) {
+.aboutus {
+  margin-bottom: 2rem;
+}
+
+.achange h4 {
+  margin-top: 2rem;
+}
+
+.tchange {
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 1200px) {
+.hero::before {
+  bottom: -11rem;
+  height: 23rem;
+  bottom: -8rem;
+}
+
+.main-image {
+  margin-bottom: 15rem;
+}
+
+.main-message {
+  margin-left: 10rem;
+  margin-top: 10rem;
+}
+
+/*--------------Log in--------------*/
+.login-image .text {
+  right: 5%;
+  top: 53%;
+}
+
+.text h1 {
+  font-size: 3rem;
+}
+
+.text h3 {
+  font-size: 2rem;
+  margin-top: 1.7rem;
+}
+
+.text h2 {
+  margin-top: 2.3rem;
+  font-size: 1.7rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.7rem;
+}
+
+/*--------------About--------------*/
+.titles {
+  transform: translateY(-11rem);
+}
+
+.aboutus {
+  transform: translateY(-10rem);
+  padding: 0 1.5rem;
+  margin-bottom: 4rem;
+}
+
+.about::before {
+  bottom: -11rem;
+  height: 23rem;
+  bottom: -8rem;
+}
+	
+/*--------------FAQ--------------*/
+.fchange {
+  padding-bottom: 5.5rem;
+}
+
+.faqus {
+  transform: translateY(-10rem);
+}
+
+.faq::before {
+  bottom: -11rem;
+  height: 23rem;
+  bottom: -8rem;
+}
+
+.anim {
+  transform: translate(0%, 23%);
+  visibility: visible;
+  width: initial;
+  height: initial;
+}
+
+/*--------------Sponsor--------------*/
+.sponorus {
+  transform: translateY(-14rem);
+}
+
+.sponsor::before {
+  bottom: -11rem;
+  height: 23rem;
+  bottom: -8rem;
+}
+
+/*--------------Team--------------*/
+.teamus {
+  transform: translateY(-10rem);
+}
+
+.team::before {
+  bottom: -11rem;
+  height: 23rem;
+  bottom: -8rem;
+}
+
+.tchange {
+  margin-bottom: 5rem;
+}
+
+/*--------------Contact--------------*/
+.contactus {
+  transform: translateY(-9rem);
+}
+
+.contact {
+  padding-bottom: 0rem;
+}
+
+.spacing {
+  height: 260px;
+}
+}
+
+@media screen and (min-width: 1700px) {
+.hero::before {
+  height: 31rem;
+  background-image: url("assets/img/arc/xlb.png");
+  background-size: cover;
+  bottom: -16rem;
+}
+
+.about::before {
+  height: 31rem;
+  background-image: url("assets/img/arc/xlw.png");
+  background-size: cover;
+  bottom: -16rem;
+}
+
+.faq::before {
+  height: 31rem;
+  background-image: url("assets/img/arc/xlg.png");
+  background-size: cover;
+  bottom: -16rem;
+}
+
+.sponsor::before {
+  height: 31rem;
+  background-image: url("assets/img/arc/xlr.png");
+  background-size: cover;
+  bottom: -16rem;
+}
+
+.team::before {
+  height: 31rem;
+  background-image: url("assets/img/arc/xlrw.png");
+  background-size: cover;
+  bottom: -16rem;
+}
+}
